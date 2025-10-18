@@ -36,7 +36,7 @@ const SobreRuben = () => {
             {/* Right: Text Content */}
             <div className="animate-slide-in-right">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                Hola, soy <span className="bg-gradient-tech bg-clip-text text-transparent">Rubén Viera</span> 👋
+                Hola, soy <span className="bg-gradient-tech bg-clip-text text-transparent">Rubén Viera</span>
               </h2>
 
               <div className="space-y-4 text-lg text-muted-foreground mb-8">
