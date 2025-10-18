@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 182 80% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 182 80% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 182 80% 13%;
+
+    /* Cyan tech - primary brand color */
+    --primary: 191 52% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 191 52% 45%;
+    
+    /* Lime tech - accent highlight */
+    --secondary: 72 100% 49%;
+    --secondary-foreground: 182 80% 13%;
+    --secondary-hover: 72 100% 42%;
+
+    --muted: 194 20% 96%;
+    --muted-foreground: 194 15% 45%;
+
+    /* Dark teal - accent dark */
+    --accent: 194 100% 18%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 194 100% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 194 13% 88%;
+    --input: 194 13% 88%;
+    --ring: 191 52% 52%;
+
+    --radius: 0.5rem;
+
+    /* Tech Gradients - Bizellers palette */
+    --gradient-primary: linear-gradient(135deg, hsl(191 52% 52%) 0%, hsl(191 52% 65%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(72 100% 49%) 0%, hsl(72 100% 62%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(203 96% 8%) 0%, hsl(191 52% 52%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(182 80% 13%) 0%, hsl(191 52% 52%) 50%, hsl(72 100% 49%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(194 20% 98%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(203 96% 8%) 0%, hsl(194 100% 18%) 100%);
+    
+    /* Tech Shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(191 52% 52% / 0.1);
+    --shadow-medium: 0 4px 16px -4px hsl(191 52% 52% / 0.15);
+    --shadow-strong: 0 8px 32px -8px hsl(191 52% 52% / 0.2);
+    --shadow-glow: 0 0 40px hsl(72 100% 49% / 0.25);
+    --shadow-glow-cyan: 0 0 40px hsl(191 52% 52% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 203 96% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 182 80% 13%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 182 80% 13%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 191 52% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 191 52% 52%;
+
+    --secondary: 72 100% 55%;
+    --secondary-foreground: 203 96% 8%;
+    --secondary-hover: 72 100% 49%;
+
+    --muted: 194 100% 15%;
+    --muted-foreground: 194 10% 65%;
+
+    --accent: 194 100% 25%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 194 100% 20%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 194 50% 20%;
+    --input: 194 50% 20%;
+    --ring: 191 52% 60%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(191 52% 60%) 0%, hsl(191 52% 75%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(72 100% 55%) 0%, hsl(72 100% 70%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(203 96% 8%) 0%, hsl(191 52% 52%) 100%);
+    --gradient-tech: linear-gradient(135deg, hsl(182 80% 13%) 0%, hsl(191 52% 52%) 50%, hsl(72 100% 49%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(203 96% 8%) 0%, hsl(182 80% 13%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(203 96% 8%) 0%, hsl(194 100% 18%) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
